@@ -1,0 +1,16 @@
+body {
+    background-color: rgb(136, 185, 231);
+}
+
+.small-center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 50%;
+}
+
+.small-img {
+    max-width: 25%;
+    border: 3px solid black
+}
