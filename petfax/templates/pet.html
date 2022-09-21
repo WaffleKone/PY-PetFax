@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
     <title>PetFax</title>
 </head>
 <body>
-    <h1>Say Hello To {{pet.pet_name}}!</h1>
-    <img class="small-center" src="{{pet.pet_photo}}" alt="Photo of {{pet.pet_name}}">
+    <h1 class="small-center">Say Hello To {{pet.pet_name}}!</h1>
+    <img class="small-center small-img" src="{{pet.pet_photo}}" alt="Photo of {{pet.pet_name}}">
     <div>
-        <span>Did you know?</span>
-        <span>Insert Fact Here</span>
+        <h2 class="small-center">Did you know?</h2>
+        <span class="small-center">{{pet.pet_fact}}</span>
     </div>
-    <a href="/pets">Return To Index</a>
+    <a class="small-center" href="/pets">Return To Index</a>
 
 </body>
 </html>
